@@ -21,8 +21,8 @@ struct MemoryGame<CardContent> {
             let content = cardContentFactoy(pairIndex)
             cards.append(Card(content: content, id: pairIndex*2))
             cards.append(Card(content: content, id: pairIndex*2+1))
-
         }
+        cards.shuffle() // Assignment 1#2
     }
     
     struct Card: Identifiable {
